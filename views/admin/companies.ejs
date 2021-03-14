@@ -1,0 +1,36 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/companies.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+
+            <main>
+                <% if (companies.length > 0) { %>
+                    <div class="grid">
+                        <% for (let company of companies) { %>
+                            <article class="card company-item">
+                                <header class="card__header">
+                                    <h1 class="company__name">
+                                        <%= company.name %>
+                                    </h1>
+                                </header>
+                                <div class="card__content">
+                                    <h2 class="company__url">
+                                        <%= company.url %>
+                                    </h2>
+                                    <h2 class="company__location">
+                                        <%= company.location %>
+                                    </h2>
+                                    <p class="company__description">
+                                        <%= company.description %>
+                                    </p>
+                                </div>
+                            </article>
+                            <% } %>
+                    </div>
+                    <% } else { %>
+                        <h1>No company Found!</h1>
+                        <% } %>
+            </main>
+            <%- include('../includes/end.ejs') %>

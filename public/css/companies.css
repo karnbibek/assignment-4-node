@@ -1,0 +1,32 @@
+.company-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.company-item {
+    width: 20rem;
+    max-width: 95%;
+    margin: 1rem;
+}
+
+.company__name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.company__url {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+.company__location {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.company__description {
+    text-align: center;
+}
